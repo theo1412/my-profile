@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Demon</title>
+</head>
+
+<body>
+
+    <section class="baniere" id="baniere">
+        <div class="logo">
+            <img src="./images/TYDlogo.png" alt="">
+        </div>
+        </div>
+
+        <div class="baniere-text">
+            <h1>ARE YOU READY TO MEET THE DEAR BLOODY MARY ?</h1>
+            <p>Come play with us !</p>
+    </section>
+
+
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#baniere">Home</a></li>
+                <li><a href="#about">About</a>
+                    <ul>
+                        <li><a href="#our_team">Our team</a></li>
+                        <li><a href="#our_project">Our project</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="btn-menu">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+
+    <script>
+        document.querySelector('.fa-xmark').style.display = "none"
+
+        const menuBtn = document.querySelector(".btn-menu")
+        const Sidebar = document.querySelector(".sidebar")
+
+        menuBtn.onclick = function() {
+
+            if (Sidebar.style.right == "-250px") {
+                Sidebar.style.right = "0"
+                document.querySelector('.fa-xmark').style.display = ""
+                document.querySelector('.fa-bars').style.display = "none"
+
+            } else {
+                Sidebar.style.right = "-250px"
+                document.querySelector('.fa-xmark').style.display = "none"
+                document.querySelector('.fa-bars').style.display = ""
+            }
+        }
+    </script>
+
+
+
+    <section class="our_team" id="our_team">
+        <h2>Our team</h2>
+        <p>Who are we?</p>
+
+
+        <div class="card card-theo">
+            <div class="border">
+                <h2>Théo DOS-REIS</h2>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/théo-dos-reis-01a02624b"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-daphne">
+            <div class="border">
+                <h2>Daphné GUERIN</h2>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/daphné-guerin-050519242/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-wissame">
+            <div class="border">
+                <h2>Wisssame ISMAEL</h2>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/wissame-ismaël-bbbb54209/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-yness">
+            <div class="border">
+                <h2>Yness KHOUADER</h2>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/yness-khouader-83a47621a/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pres pres-theo">
+            <p>Having been at EPITA for 4 months now, I am more than convinced that IT is a path that interests me and that always pushes me to push my limits. I have always been interested in IT and everything related directly or indirectly to this field.
+                Many projects that I was able to carry out during my schooling such as applications, website or basic artificial intelligence. All these projects have reinforced my love for IT and made me want to continue at EPITA. Video game player since
+                my youngest age, I knew how to experiment with many styles and games, therefore I would be able to bring a global and meticulous vision of certain aspects specific to the gameplay.</p>
+        </div>
+
+        <div class="pres pres-daphne">
+            <p>Coming from a general terminal in physics and mathematics, I trained alone in certain computer languages ​​before entering EPITA. Passionate about video games and player of both solo and multi-player adventure games, I know the expectations
+                of any good player. In addition, thanks to a theatrical experience, I am able to write a scenario for our horror adventure game. This skill is accompanied by quality in the design and the audio production which allow me to visualize and
+                implement the universe of the game itself, an ability compensating for my lack of knowledge in the programming of the game play itself.</p>
+        </div>
+
+        <div class="pres pres-wissame">
+            <p>This project allowed me to go further in my use of C#. The most interesting in this project was having a first glimpse of the professional world, which implies having constraints and deadlines to respect and work in a group. Furthermore, this
+                field interests me a lot. Video games have always followed me from my childhood until now. I grew up with licenses that are still relevant like Mario or The Legend of Zelda. I have always wondered how games are made and this project will
+                allow me to see behind the scenes.</p>
+        </div>
+
+        <div class="pres pres-yness">
+            <p>Entering the IT bath through my big brother, also in IT, I learned the GO language on my own. My observation internship at Weborama confirmed my desire to work in this field. I had created an algorithm in charge of a daunting task entrusted
+                to me. Passionate about AI, I plan to follow the SCIA major in order to become a data scientist. Having a certain attraction for drawing that I practice since my early childhood first on paper then on a graphic tablet, design is surely
+                my favorite field. Playing only very rarely video games, my point of view may differ from the other members of the group and will probably be able to bring a critical eye during the realization of our project.</p>
+        </div>
+    </section>
+
+
+
+    <section class="our_project" id="our_project">
+        <h2>Our project</h2>
+
+        <div class="main clearfix">
+
+            <div class="content">
+                <p>For this project, our team decided to tackle a type of game that is sometimes abandoned and remaster it as a multiplayer game in order to create a game between horror and adventure: “Mary, where are you? ". <br> This game consists of collecting
+                    clues in order to find Mary's murderer and her child, both taken from the famous Bloody Mary myth. A little reminder, this myth tells the story of a woman in the 20th century who allegedly lost her child during a miscarriage and who
+                    was locked alive in a coffin by her father with the only escape being a wire connected to a bell if she never regained consciousness, but the bell never rang. <br>Our goal is to give you the biggest scare of your life. During the creation
+                    of this game, our team made up of Wissame, Daphné, Théo and Yness had to get out of their comfort zone in order to learn and discover 3D modeling (Blender), the creation of a multi-player system (4 characters), sound development (Music
+                    Maker) and many more. It is thanks to this learning that the first forms of the game appear and motivate to continue to move forward. Indeed, the decor and the atmosphere go hand in hand to give way to an image of the game that becomes
+                    clearer over the weeks. <br>However, there is still a long way to go before the culmination of this game. Indeed, other challenges await this team, in particular with the creation of an AI taken from a horror film. In addition, our
+                    teamwork will solve the next problems that we will encounter with gameplay or graphics and others. </p>
+                <h3>We hunt demons together with the Track Your Demon team !</h3>
+            </div>
+
+            <div class="bottom image1">
+                <img src="#" alt="">
+            </div>
+
+            <div class="bottom image2">
+                <img src="#" alt="">
+            </div>
+
+            <div class="bottom image3">
+                <img src="#" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="resources" id="resources">
+
+        <h2>Resources</h2>
+
+        <div class="boxes box1">
+            <img src="#" alt="">
+        </div>
+
+        <div class="boxes box2">
+            <img src="#" alt="">
+        </div>
+
+        <div class="boxes box3">
+            <img src="#" alt="">
+        </div>
+
+        <div class="boxes box4">
+            <img src="#" alt="">
+        </div>
+
+        <div class="text" id="text">
+            <div class="text1">
+                <p><a href="https://www.blender.org">Blender</a> is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, virtual
+                    reality, and, formerly, video games.</p>
+            </div>
+
+            <div class="text2">
+                <p><a href="https://unity.com/fr/pages/unity-pro-buy-now?utm_source=google&utm_medium=cpc&utm_campaign=Google%3ESearch%3EDDGMG%3EDigitalDirect%3EEMEA%3EPro%3EFR%3EBrand%3EMain%3ENull%3ENull%3ECC3022&utm_content=Unity&utm_term=unity&gclid=CjwKCAjwnZaVBhA6EiwAVVyv9PeG_uthimc1qCbV6AFTQ9IlPIPoMuBjUF91sFvc8AzyTrh8RSjefhoCzgEQAvD_BwE&gclsrc=aw.ds">Unity</a>Software
+                    Inc. is a video game software development company based in San Francisco. It was founded in Denmark in 2004 as Over the Edge Entertainment and changed its name in 2007.</p>
+            </div>
+
+            <div class="text3">
+                <p><a href="https://www.adobe.com/fr/products/photoshop/landpb.html?mv=search&mv=search&sdid=LZ32SYVR&ef_id=CjwKCAjwnZaVBhA6EiwAVVyv9PPm_Z2iXJwcDVGokJ1Wotf1qabq_p5GFEV9VlDoUnnD3YyVHkQ17RoCRSUQAvD_BwE:G:s&s_kwcid=AL!3085!3!444970329968!e!!g!!photoshop!10399849358!98633477250&gclid=CjwKCAjwnZaVBhA6EiwAVVyv9PPm_Z2iXJwcDVGokJ1Wotf1qabq_p5GFEV9VlDoUnnD3YyVHkQ17RoCRSUQAvD_BwE">Adobe Photoshop</a>                    is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It was originally created in 1988 by Thomas and John Knoll. Since then, the software has become the industry standard not only in raster graphics
+                    editing, but in digital art as a whole.</p>
+            </div>
+
+            <div class="text4">
+                <p><a href="https://www.mixamo.com/#/">Mixamo</a> is a 3D computer graphics technology company. Based in San Francisco, the company develops and sells web-based services for 3D character animation. Mixamo's technologies use machine learning
+                    methods to automate the steps of the character animation process, including 3D modeling to rigging and 3D animation.</p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <section class="download" id="download">
+        <div class="download-text">
+            <h1>DOWNLOAD ME !</h1>
+        </div>
+        <div class="download-btn">
+            <a href="./Rapport soutenance 14 juin pdf.pdf"> <span></span><b>Report</b></a>
+            <a href="https://github.com/W1554M3/TYD"> <span></span><b>Game</b></a>
+        </div>
+
+        <p>Made with ❤️ by TYD</p>
+
+    </section>
+
+</body>
+
+</html>
